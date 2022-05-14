@@ -16,10 +16,12 @@ body {
 .container {
   margin: 0 auto;
   max-width: 50%;
+  max-height: 100%;
 }
 
 .slider {
   max-width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 3fr 1fr;
   row-gap: 1rem;
@@ -178,4 +180,37 @@ input[type="radio"] {
 @keyframes translating-out {
   0%   { transform: translateX(0%)}
   100% { transform: translateX(-100%); }
+}
+
+@media (max-width: 800px) {
+
+  body {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .slider {
+    grid-template-columns: 1fr; 
+    row-gap: 0.5rem;
+    justify-items: center;
+    grid-template-areas: 
+      "picture"
+      "navigation"
+      "caption";
+  }
+
+  .navigation .btn {
+    height: 2rem;
+    width: 2rem;
+  }
+  
+  .btn > .circle {
+    height: 0.7rem;
+    width: 0.7rem;
+  }
 }
