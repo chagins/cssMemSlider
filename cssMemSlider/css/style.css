@@ -34,9 +34,7 @@ body {
 }
 
 input[type="radio"] {
-  visibility: hidden;
-  width: 0%;
-  height: 0%;
+  display: none;
 }
 
 .picture {
@@ -182,7 +180,7 @@ input[type="radio"] {
   100% { transform: translateX(-100%); }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
 
   body {
     font-size: 0.8rem;
@@ -191,7 +189,7 @@ input[type="radio"] {
 
   .container {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
   }
 
   .slider {
