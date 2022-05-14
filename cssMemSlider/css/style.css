@@ -89,6 +89,11 @@ input[type="radio"] {
   border: 0.1rem solid #fff;
 }
 
+
+.btn:active > .circle {
+  box-shadow: 0px 0px 10px 0px #fff;
+}
+
 #radio01:checked ~ .navigation #btn01 > .circle{
   background-color: transparent;
 }
