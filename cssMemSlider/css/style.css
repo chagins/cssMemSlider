@@ -207,6 +207,10 @@ input[type="radio"] {
       "caption";
   }
 
+  .caption {
+    padding: 0 1rem;
+  }
+
   .navigation .btn {
     height: 2rem;
     width: 2rem;
