@@ -54,7 +54,7 @@ input[type="radio"] {
 }
 
 .navigation {
-  padding-right: 1rem;
+  padding: 0 1rem;
   grid-area: navigation;
   display: flex;
   justify-content: end;
